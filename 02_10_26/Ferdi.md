@@ -11,7 +11,7 @@ FPGA-B bertindak sebagai independent hardware observer yang bertugas memverifika
 
 1. **Senin, 28 September 2026**
 
-    Hierarki modul observer_top berhasil di-freeze secara terisolasi dari domain internal DUT. Pembelajaran difokuskan pada implementasi independent timestamp counter dan independent pulse/event counter untuk mencatat transisi stimulus tanpa coupling logika ke DUT. Ditetapkan struktur event record awal (EVENT_ID, TYPE, TIMESTAMP, VALUE, FLAGS) serta basic observer testbench dengan evidence logging (source hash, simulation log, waveform, expected vs actual count) guna memenuhi kriteria day gate.
+    Membuat modul observer_top berhasil di-freeze secara terisolasi dari domain internal DUT. Pembelajaran difokuskan pada implementasi independent timestamp counter dan independent pulse/event counter untuk mencatat transisi stimulus tanpa coupling logika ke DUT. Ditetapkan struktur event record awal (EVENT_ID, TYPE, TIMESTAMP, VALUE, FLAGS) serta basic observer testbench dengan evidence logging (source hash, simulation log, waveform, expected vs actual count) guna memenuhi kriteria day gate.
 
 2. **Selasa, 29 September 2026**
 
@@ -21,10 +21,10 @@ FPGA-B bertindak sebagai independent hardware observer yang bertugas memverifika
 
    Verifikasi observer ditingkatkan dari manual waveform inspection menjadi fully self-checking testbench. Pembelajaran mencakup penerapan logika timestamping pada common event, interval calculation/check, expected-sequence checking, event-log buffering model, dan scoreboard PASS/FAIL otomatis. Melalui intentional DUT mismatch/suppression stimulus (kondisi expected = 1000, DUT = 999, observer = 1000), testbench terbukti mampu mendeteksi anomali secara deterministik melalui notifikasi First Divergence = DETECTED.
 
-5. **Kamis, 1 Oktober 2026 — Event Logger & Host-Facing Model**
+5. **Kamis, 1 Oktober 2026**
 
    Format event record distabilkan untuk kebutuhan software/tooling interface melalui pembangunan host-output model. Pembelajaran meliputi penambahan observer health/status monitoring, penyusunan parser expectations untuk host/firmware, serta validasi deterministic export dalam format text/CSV-like. Hal ini memungkinkan pelaksanaan joint log replay dan pengujian software tanpa ketergantungan pada physical FPGA hardware.
 
-7. **Jumat, 2 Oktober 2026 — Verification Campaign & Defect Closure**
+7. **Jumat, 2 Oktober 2026**
 
     Eksekusi menyeluruh verification test campaign (T-01 hingga T-10) untuk memvalidasi observer behavior terhadap reset, one-event, 100-event, burst traffic, asynchronous edge, missing event, duplicate event, counter overflow wrap/saturation, reset during activity, serta invalid/malformed stimulus. Setiap test didokumentasikan secara ketat berbasis evidence (test ID, stimulus profile, expected, actual, PASS/FAIL status, evidence path), memastikan seluruh P0 simulation defects tertutup sebelum memasuki fase physical bring-up.
