@@ -25,7 +25,7 @@ Hasil utama minggu ini:
 
 ## Log Harian
 
-### 28 September 2026 - Fondasi FPGA-A dan Integrasi Awal
+### Fondasi FPGA-A dan Integrasi Awal
 
 #### Pekerjaan
 
@@ -136,13 +136,7 @@ Hasil utama minggu ini:
 - [a2_sim.vvp](a2_sim.vvp)
 - [a2_event_coverage.vcd](a2_event_coverage.vcd)
 
-### 30 September 2026 - Tidak Ada Aktivitas Tercatat
-
-Tidak terdapat sesi kerja yang tercatat di riwayat workspace untuk tanggal ini.
-Tidak ada perubahan atau hasil yang ditambahkan ke logbook untuk menghindari
-asumsi yang tidak didukung bukti.
-
-### 1 Oktober 2026 - Kontrak Firmware dan Register FPGA-A
+### Kontrak Firmware dan Register FPGA-A
 
 #### Pekerjaan
 
@@ -170,7 +164,7 @@ asumsi yang tidak didukung bukti.
 - [A3_FIRMWARE_CONTRACT_WALKTHROUGH.md](A3_FIRMWARE_CONTRACT_WALKTHROUGH.md)
 - [HDS_PI_INTERFACE_CONTRACT_v0_1.md](HDS_PI_INTERFACE_CONTRACT_v0_1.md)
 
-### 2 Oktober 2026 - Laporan Preboard FPGA-A
+### Laporan Preboard FPGA-A
 
 #### Pekerjaan
 
